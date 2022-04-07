@@ -1,0 +1,93 @@
+canvas {
+  display: block;
+}
+
+.control-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.control-group > div {
+  display: flex;
+  gap: 8px;
+}
+
+.control-group > div > input {
+  width: 100%;
+}
+
+.control-group > div > input[type="number"] {
+  width: 7ch;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.col {
+  flex: 1 1 0%;
+}
+
+.f-vert {
+  flex-direction: column;
+}
+
+.global-phase {
+  align-items: center;
+
+  font-weight: bold;
+
+  background: linear-gradient(
+    red 0%,
+    #ff0 17%,
+    lime 33%,
+    cyan 50%,
+    blue 66%,
+    #f0f 83%,
+    red 100%
+  );
+}
+
+button {
+  padding: 10px !important;
+}
+
+#bloch-parent {
+  position: relative;
+}
+
+.bloch-circle-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: #777 2px dashed;
+  width: 74%;
+  height: 74%;
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.bloch-overlay {
+  position: absolute;
+  font-family: LMR, LMM, 'Latin Modern Roman', 'Latin Modern Math', 'Computer Modern', serif;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+
+  background: white;
+}
+
+.bloch-overlay.bloch-0 {
+  top: 10%;
+}
+
+.bloch-overlay.bloch-1 {
+  bottom: 10%;
+}
+
+footer > * {
+	display: block;
+}
